@@ -1,0 +1,15 @@
+R_DEF: Internal format may change without notice
+local
+dimen box_inset_layout_padding
+dimen inner_frame_layout_padding
+id buttonStart
+id currentTimeTextView
+id minus
+id minutes
+id plus
+id time
+layout activity_main
+mipmap ic_launcher
+raw noti
+string app_name
+string hello_world

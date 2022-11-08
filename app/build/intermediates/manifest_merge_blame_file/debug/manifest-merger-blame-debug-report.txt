@@ -1,0 +1,106 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="sanity.wearsportstopwatch"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.WAKE_LOCK" />
+11-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:4:5-68
+11-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:4:22-65
+12    <uses-permission android:name="android.permission.VIBRATE" />
+12-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:5:5-66
+12-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:5:22-63
+13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+13-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:6:5-77
+13-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:6:22-74
+14
+15    <uses-feature android:name="android.hardware.type.watch" />
+15-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:8:5-64
+15-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:8:19-61
+16
+17    <application
+17-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:10:5-42:19
+18        android:allowBackup="true"
+18-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:11:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.7.0] /Users/mkaflowski/.gradle/caches/transforms-3/0f8ed80c56f41b03a60474b00c4a3f80/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+20        android:debuggable="true"
+21        android:extractNativeLibs="false"
+22        android:icon="@mipmap/ic_launcher"
+22-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:12:9-43
+23        android:label="@string/app_name"
+23-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:13:9-41
+24        android:supportsRtl="true"
+24-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:14:9-35
+25        android:testOnly="true"
+26        android:theme="@android:style/Theme.DeviceDefault" >
+26-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:15:9-59
+27        <service
+27-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:16:9-19:47
+28            android:name="sanity.wearsportstopwatch.MyService"
+28-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:17:13-38
+29            android:enabled="true"
+29-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:18:13-35
+30            android:exported="true" />
+30-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:19:13-36
+31
+32        <uses-library
+32-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:21:9-23:39
+33            android:name="com.google.android.wearable"
+33-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:22:13-55
+34            android:required="true" />
+34-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:23:13-36
+35        <!--
+36               Set to true if your app is Standalone, that is, it does not require the handheld
+37               app to run.
+38        -->
+39        <meta-data
+39-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:28:9-30:36
+40            android:name="com.google.android.wearable.standalone"
+40-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:29:13-66
+41            android:value="true" />
+41-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:30:13-33
+42
+43        <activity
+43-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:32:9-41:20
+44            android:name="sanity.wearsportstopwatch.MainActivity"
+44-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:33:13-41
+45            android:exported="true"
+45-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:34:13-36
+46            android:label="@string/app_name" >
+46-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:35:13-45
+47            <intent-filter>
+47-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:36:13-40:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:37:17-69
+48-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:37:25-66
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:39:17-77
+50-->/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:39:27-74
+51            </intent-filter>
+52        </activity>
+53        <activity
+53-->[com.google.android.gms:play-services-base:18.0.1] /Users/mkaflowski/.gradle/caches/transforms-3/d81e92b27a6af5ec6c33078d341a9ab0/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+54            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+54-->[com.google.android.gms:play-services-base:18.0.1] /Users/mkaflowski/.gradle/caches/transforms-3/d81e92b27a6af5ec6c33078d341a9ab0/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+55            android:exported="false"
+55-->[com.google.android.gms:play-services-base:18.0.1] /Users/mkaflowski/.gradle/caches/transforms-3/d81e92b27a6af5ec6c33078d341a9ab0/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+56            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+56-->[com.google.android.gms:play-services-base:18.0.1] /Users/mkaflowski/.gradle/caches/transforms-3/d81e92b27a6af5ec6c33078d341a9ab0/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+57
+58        <meta-data
+58-->[com.google.android.gms:play-services-basement:18.0.0] /Users/mkaflowski/.gradle/caches/transforms-3/5e48f5b8b6378cf257676d27a0d01fcf/transformed/play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+59            android:name="com.google.android.gms.version"
+59-->[com.google.android.gms:play-services-basement:18.0.0] /Users/mkaflowski/.gradle/caches/transforms-3/5e48f5b8b6378cf257676d27a0d01fcf/transformed/play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+60            android:value="@integer/google_play_services_version" />
+60-->[com.google.android.gms:play-services-basement:18.0.0] /Users/mkaflowski/.gradle/caches/transforms-3/5e48f5b8b6378cf257676d27a0d01fcf/transformed/play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+61    </application>
+62
+63</manifest>

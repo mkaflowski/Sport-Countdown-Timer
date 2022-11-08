@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "sanity.wearsportstopwatch.app-mergeDebugResources-18:/values-round-v23/values-round-v23.xml",
+            "map": [
+                {
+                    "source": "/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/res/values-round/strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "58",
+                        "endOffsets": "70"
+                    },
+                    "to": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "284",
+                        "endColumns": "58",
+                        "endOffsets": "338"
+                    }
+                },
+                {
+                    "source": "/Users/mkaflowski/.gradle/caches/transforms-3/4997f2423a7739771fcfc2cd8549bf95/transformed/wear-1.2.0/res/values-round-v23/values-round-v23.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,118,204",
+                        "endColumns": "62,85,79",
+                        "endOffsets": "113,199,279"
+                    }
+                }
+            ]
+        }
+    ]
+}
