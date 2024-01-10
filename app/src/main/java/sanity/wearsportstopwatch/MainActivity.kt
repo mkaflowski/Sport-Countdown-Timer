@@ -16,6 +16,7 @@ import android.view.View
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.TextView
+import androidx.core.widget.NestedScrollView
 import sanity.wearsportstopwatch.databinding.ActivityMainBinding
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
@@ -24,7 +25,7 @@ import java.time.format.DateTimeFormatter
 class MainActivity : Activity() {
 
     private lateinit var binding: ActivityMainBinding
-
+    lateinit var scrollView: NestedScrollView
     val time = System.currentTimeMillis()
     var startTime = System.currentTimeMillis() / 1000
     val lapTime = 3
@@ -70,6 +71,7 @@ class MainActivity : Activity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        scrollView = binding.scrollView
         timeTv = findViewById(R.id.time)
         val currentTv = findViewById<TextView>(R.id.currentTimeTextView)
         startBt = findViewById(R.id.buttonStart)
@@ -89,11 +91,24 @@ class MainActivity : Activity() {
 
         timeTv.text = "STOP"
 
+        // Post a task to scroll to the startBt in the center after the layout is complete
+        scrollView.post {
+            val scrollViewHeight = scrollView.height
+            val startBtTop = startBt.top
+            val startBtHeight = startBt.height
+
+            val scrollTo = startBtTop + startBtHeight / 2 - scrollViewHeight / 2
+            scrollView.smoothScrollTo(0, scrollTo)
+        }
+
         startBt.setOnClickListener(View.OnClickListener {
             if (!isRunning) {
 //                startTime = System.currentTimeMillis() / 1000
 //                isRunning = true
 //                startThread(timeTv, currentTv)
+
+
+
                 val intent = Intent(this, MyService::class.java)
                 intent.putExtra("MINUTES", Integer.parseInt(minutes.text.toString()))
                 applicationContext.startForegroundService(intent)
@@ -103,7 +118,8 @@ class MainActivity : Activity() {
 
                 startBt.text = "STOP"
                 startBt.setBackgroundColor(Color.parseColor("#ff0000"))
-
+                // Scroll to the top of the ScrollView
+                scrollView.smoothScrollTo(0, 0)
             } else {
                 isRunning = false
                 timeTv.text = "STOP"
@@ -111,6 +127,8 @@ class MainActivity : Activity() {
                 startBt.text = "START"
                 startBt.setBackgroundColor(Color.parseColor("#4CAF50"))
             }
+
+
         })
 
         Thread {

@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+color ic_launcher_background
 dimen box_inset_layout_padding
 dimen inner_frame_layout_padding
 id buttonStart
@@ -7,9 +8,13 @@ id currentTimeTextView
 id minus
 id minutes
 id plus
+id scrollView
 id time
 layout activity_main
 mipmap ic_launcher
+mipmap ic_launcher_foreground
+mipmap ic_launcher_round
 raw noti
 string app_name
 string hello_world
+string open_the_app_to_stop_it

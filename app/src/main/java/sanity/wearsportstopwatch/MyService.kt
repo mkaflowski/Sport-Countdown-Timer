@@ -67,10 +67,10 @@ class MyService : Service() {
     fun startThread() {
         startForeground()
         isRunning = false
-        Thread.sleep(1100)
         startTime = System.currentTimeMillis() / 1000
         isRunning = true
         Thread(Runnable {
+            Thread.sleep(1100)
             while (isRunning) {
                 val time = lapTime + (startTime - System.currentTimeMillis() / 1000)
                 val timeString = (time / 60).toString() + " : " + (time % 60).toString()
@@ -86,8 +86,8 @@ class MyService : Service() {
                     }
                 val notification: Notification = Notification.Builder(this, "CHANNEL_TIMER")
                     .setContentTitle(timeString)
-                    .setContentText("Timer")
-                    .setSmallIcon(androidx.legacy.v4.R.drawable.notification_bg)
+                    .setContentText(getString(R.string.open_the_app_to_stop_it))
+                    .setSmallIcon(R.mipmap.ic_launcher_foreground)
                     .setContentIntent(pendingIntent)
                     .setTicker("Ticker")
                     .build()
