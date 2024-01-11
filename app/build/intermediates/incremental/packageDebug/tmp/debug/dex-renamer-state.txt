@@ -1,4 +1,4 @@
-#Wed Jan 10 17:59:59 CET 2024
+#Thu Jan 11 15:34:02 CET 2024
 base.0=/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 base.1=/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
 base.2=/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex

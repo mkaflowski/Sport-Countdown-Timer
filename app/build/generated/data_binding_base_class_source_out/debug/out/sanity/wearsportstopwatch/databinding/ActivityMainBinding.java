@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.widget.NestedScrollView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import androidx.wear.widget.BoxInsetLayout;
@@ -36,17 +37,21 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Button plus;
 
   @NonNull
+  public final NestedScrollView scrollView;
+
+  @NonNull
   public final TextView time;
 
   private ActivityMainBinding(@NonNull BoxInsetLayout rootView, @NonNull Button buttonStart,
       @NonNull TextView currentTimeTextView, @NonNull Button minus, @NonNull TextView minutes,
-      @NonNull Button plus, @NonNull TextView time) {
+      @NonNull Button plus, @NonNull NestedScrollView scrollView, @NonNull TextView time) {
     this.rootView = rootView;
     this.buttonStart = buttonStart;
     this.currentTimeTextView = currentTimeTextView;
     this.minus = minus;
     this.minutes = minutes;
     this.plus = plus;
+    this.scrollView = scrollView;
     this.time = time;
   }
 
@@ -107,6 +112,12 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.scrollView;
+      NestedScrollView scrollView = ViewBindings.findChildViewById(rootView, id);
+      if (scrollView == null) {
+        break missingId;
+      }
+
       id = R.id.time;
       TextView time = ViewBindings.findChildViewById(rootView, id);
       if (time == null) {
@@ -114,7 +125,7 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((BoxInsetLayout) rootView, buttonStart, currentTimeTextView,
-          minus, minutes, plus, time);
+          minus, minutes, plus, scrollView, time);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

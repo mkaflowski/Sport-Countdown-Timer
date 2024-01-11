@@ -9,6 +9,10 @@ import android.os.IBinder
 import android.os.Vibrator
 import android.util.Log
 import androidx.core.app.NotificationManagerCompat
+import java.util.concurrent.Executors
+import java.util.concurrent.Future
+import java.util.concurrent.ScheduledFuture
+import java.util.concurrent.TimeUnit
 
 class MyService : Service() {
     private val ONGOING_NOTIFICATION_ID = 128
@@ -17,6 +21,8 @@ class MyService : Service() {
     var mMediaPlayer = MediaPlayer()
     var startTime = System.currentTimeMillis() / 1000
     var lapTime = 10
+    // Future for the scheduled task
+    private var future: ScheduledFuture<*>? = null
 
     // Binder given to clients
     private val binder = LocalBinder()
@@ -32,7 +38,7 @@ class MyService : Service() {
 
     override fun onStartCommand(intent: Intent, flags: Int, startId: Int): Int {
 
-        lapTime = 60 * intent.getIntExtra("MINUTES",5)
+        lapTime = 60 * intent.getIntExtra("MINUTES", 5)
         createChannel(this)
         startThread()
         return super.onStartCommand(intent, flags, startId)
@@ -60,6 +66,7 @@ class MyService : Service() {
     }
 
     fun stopThread() {
+        future?.cancel(true)
         isRunning = false
         stopForeground(true)
     }
@@ -69,9 +76,9 @@ class MyService : Service() {
         isRunning = false
         startTime = System.currentTimeMillis() / 1000
         isRunning = true
-        Thread(Runnable {
-            Thread.sleep(1100)
-            while (isRunning) {
+
+        val scheduler = Executors.newSingleThreadScheduledExecutor()
+        future = scheduler.scheduleAtFixedRate({
                 val time = lapTime + (startTime - System.currentTimeMillis() / 1000)
                 val timeString = (time / 60).toString() + " : " + (time % 60).toString()
                 Log.d("time", timeString)
@@ -87,7 +94,7 @@ class MyService : Service() {
                 val notification: Notification = Notification.Builder(this, "CHANNEL_TIMER")
                     .setContentTitle(timeString)
                     .setContentText(getString(R.string.open_the_app_to_stop_it))
-                    .setSmallIcon(R.mipmap.ic_launcher_foreground)
+                    .setSmallIcon(R.drawable.notification)
                     .setContentIntent(pendingIntent)
                     .setTicker("Ticker")
                     .build()
@@ -110,11 +117,8 @@ class MyService : Service() {
 
                     startTime = System.currentTimeMillis() / 1000
 
-                    continue
                 }
-                Thread.sleep(1000)
-            }
-        }).start()
+        }, 0, 1, TimeUnit.SECONDS)
     }
 
     private fun createChannel(context: Context) {
