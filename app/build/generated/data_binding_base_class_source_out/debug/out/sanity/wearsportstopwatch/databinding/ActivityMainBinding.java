@@ -28,6 +28,9 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView currentTimeTextView;
 
   @NonNull
+  public final TextView label1;
+
+  @NonNull
   public final Button minus;
 
   @NonNull
@@ -43,11 +46,13 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView time;
 
   private ActivityMainBinding(@NonNull BoxInsetLayout rootView, @NonNull Button buttonStart,
-      @NonNull TextView currentTimeTextView, @NonNull Button minus, @NonNull TextView minutes,
-      @NonNull Button plus, @NonNull ScrollView scrollView, @NonNull TextView time) {
+      @NonNull TextView currentTimeTextView, @NonNull TextView label1, @NonNull Button minus,
+      @NonNull TextView minutes, @NonNull Button plus, @NonNull ScrollView scrollView,
+      @NonNull TextView time) {
     this.rootView = rootView;
     this.buttonStart = buttonStart;
     this.currentTimeTextView = currentTimeTextView;
+    this.label1 = label1;
     this.minus = minus;
     this.minutes = minutes;
     this.plus = plus;
@@ -94,6 +99,12 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.label1;
+      TextView label1 = ViewBindings.findChildViewById(rootView, id);
+      if (label1 == null) {
+        break missingId;
+      }
+
       id = R.id.minus;
       Button minus = ViewBindings.findChildViewById(rootView, id);
       if (minus == null) {
@@ -125,7 +136,7 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((BoxInsetLayout) rootView, buttonStart, currentTimeTextView,
-          minus, minutes, plus, scrollView, time);
+          label1, minus, minutes, plus, scrollView, time);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

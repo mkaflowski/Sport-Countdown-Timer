@@ -1,98 +1,102 @@
 [
     {
-        "merged": "sanity.wearsportstopwatch.app-merged_res-21:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "sanity.wearsportstopwatch.app-main-23:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-merged_res-21:/raw_noti.mp3.flat",
+        "source": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-main-23:/raw/noti.mp3"
     },
     {
-        "merged": "sanity.wearsportstopwatch.app-merged_res-21:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "sanity.wearsportstopwatch.app-main-23:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-merged_res-21:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-main-23:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "sanity.wearsportstopwatch.app-merged_res-21:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "sanity.wearsportstopwatch.app-main-23:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-merged_res-21:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-main-23:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "sanity.wearsportstopwatch.app-merged_res-21:/drawable-hdpi_notification.png.flat",
-        "source": "sanity.wearsportstopwatch.app-main-23:/drawable-hdpi/notification.png"
+        "merged": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-merged_res-21:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-main-23:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "sanity.wearsportstopwatch.app-merged_res-21:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "sanity.wearsportstopwatch.app-main-23:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+        "merged": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-merged_res-21:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-main-23:/mipmap-xxhdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "sanity.wearsportstopwatch.app-merged_res-21:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
-        "source": "sanity.wearsportstopwatch.app-main-23:/mipmap-mdpi/ic_launcher_foreground.webp"
+        "merged": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-merged_res-21:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-main-23:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "sanity.wearsportstopwatch.app-merged_res-21:/drawable-xxhdpi_notification.png.flat",
-        "source": "sanity.wearsportstopwatch.app-main-23:/drawable-xxhdpi/notification.png"
+        "merged": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-merged_res-21:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-main-23:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "sanity.wearsportstopwatch.app-merged_res-21:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "sanity.wearsportstopwatch.app-main-23:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+        "merged": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-merged_res-21:/layout_activity_main.xml.flat",
+        "source": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-main-23:/layout/activity_main.xml"
     },
     {
-        "merged": "sanity.wearsportstopwatch.app-merged_res-21:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
-        "source": "sanity.wearsportstopwatch.app-main-23:/mipmap-xhdpi/ic_launcher_foreground.webp"
+        "merged": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-merged_res-21:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-main-23:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "sanity.wearsportstopwatch.app-merged_res-21:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "sanity.wearsportstopwatch.app-main-23:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-merged_res-21:/drawable-xxhdpi_notification.png.flat",
+        "source": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-main-23:/drawable-xxhdpi/notification.png"
     },
     {
-        "merged": "sanity.wearsportstopwatch.app-merged_res-21:/drawable-xhdpi_notification.png.flat",
-        "source": "sanity.wearsportstopwatch.app-main-23:/drawable-xhdpi/notification.png"
+        "merged": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-merged_res-21:/drawable-mdpi_notification.png.flat",
+        "source": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-main-23:/drawable-mdpi/notification.png"
     },
     {
-        "merged": "sanity.wearsportstopwatch.app-merged_res-21:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "sanity.wearsportstopwatch.app-main-23:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-merged_res-21:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-main-23:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-merged_res-21:/drawable-xxxhdpi_notification.png.flat",
+        "source": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-main-23:/drawable-xxxhdpi/notification.png"
     },
     {
         "merged": "sanity.wearsportstopwatch.app-merged_res-21:/layout_activity_main.xml.flat",
         "source": "sanity.wearsportstopwatch.app-main-23:/layout/activity_main.xml"
     },
     {
-        "merged": "sanity.wearsportstopwatch.app-merged_res-21:/drawable-mdpi_notification.png.flat",
-        "source": "sanity.wearsportstopwatch.app-main-23:/drawable-mdpi/notification.png"
+        "merged": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-merged_res-21:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-main-23:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "sanity.wearsportstopwatch.app-merged_res-21:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "sanity.wearsportstopwatch.app-main-23:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-merged_res-21:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-main-23:/mipmap-xhdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "sanity.wearsportstopwatch.app-merged_res-21:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "sanity.wearsportstopwatch.app-main-23:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-merged_res-21:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-main-23:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "sanity.wearsportstopwatch.app-merged_res-21:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
-        "source": "sanity.wearsportstopwatch.app-main-23:/mipmap-hdpi/ic_launcher_foreground.webp"
+        "merged": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-merged_res-21:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-main-23:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "sanity.wearsportstopwatch.app-merged_res-21:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "sanity.wearsportstopwatch.app-main-23:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-merged_res-21:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-main-23:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "sanity.wearsportstopwatch.app-merged_res-21:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "sanity.wearsportstopwatch.app-main-23:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-merged_res-21:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-main-23:/mipmap-mdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "sanity.wearsportstopwatch.app-merged_res-21:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "sanity.wearsportstopwatch.app-main-23:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-merged_res-21:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-main-23:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "sanity.wearsportstopwatch.app-merged_res-21:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "sanity.wearsportstopwatch.app-main-23:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-merged_res-21:/drawable-xhdpi_notification.png.flat",
+        "source": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-main-23:/drawable-xhdpi/notification.png"
     },
     {
-        "merged": "sanity.wearsportstopwatch.app-merged_res-21:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "sanity.wearsportstopwatch.app-main-23:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-merged_res-21:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-main-23:/mipmap-hdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "sanity.wearsportstopwatch.app-merged_res-21:/drawable-xxxhdpi_notification.png.flat",
-        "source": "sanity.wearsportstopwatch.app-main-23:/drawable-xxxhdpi/notification.png"
+        "merged": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-merged_res-21:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-main-23:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "sanity.wearsportstopwatch.app-merged_res-21:/raw_noti.mp3.flat",
-        "source": "sanity.wearsportstopwatch.app-main-23:/raw/noti.mp3"
+        "merged": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-merged_res-21:/drawable-hdpi_notification.png.flat",
+        "source": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-main-23:/drawable-hdpi/notification.png"
     }
 ]

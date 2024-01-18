@@ -6,6 +6,7 @@ dimen inner_frame_layout_padding
 drawable notification
 id buttonStart
 id currentTimeTextView
+id label1
 id minus
 id minutes
 id plus

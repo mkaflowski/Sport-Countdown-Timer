@@ -2,5 +2,9 @@
     {
         "merged": "sanity.wearsportstopwatch.app-mergeDebugResources-20:/layout/activity_main.xml",
         "source": "sanity.wearsportstopwatch.app-main-23:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-mergeDebugResources-20:/layout/activity_main.xml",
+        "source": "/Users/mkaflowski/.gradle/daemon/7.4/sanity.wearsportstopwatch.app-main-23:/layout/activity_main.xml"
     }
 ]

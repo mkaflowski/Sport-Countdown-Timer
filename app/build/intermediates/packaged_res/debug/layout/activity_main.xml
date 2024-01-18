@@ -36,13 +36,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
                 android:layout_marginTop="35dp"
                 android:gravity="center"
-                android:text="00:00:00"
                 android:padding="10dp"
+                android:text="00:00:00"
                 android:textSize="35sp"
-                android:textStyle="bold"
-                android:layout_gravity="center" />
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/buttonStart"
@@ -50,42 +50,59 @@
                 android:layout_height="60dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="90dp"
-                android:background="#4CAF50"
+                android:backgroundTint="#4CAF50"
                 android:text="Start"
                 android:textSize="10sp" />
 
-            <Button
-                android:id="@+id/minus"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                android:backgroundTint="#3E7DB3"
-                android:text="-"
-                android:textSize="15sp" />
-
             <TextView
-                android:id="@+id/minutes"
+                android:id="@+id/label1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
                 android:gravity="center"
-                android:padding="10dp"
-                android:text="5"
-                android:textSize="35sp"
+                android:padding="5dp"
+                android:text="One loop time:"
+                android:textSize="15sp"
                 android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/plus"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                android:backgroundTint="#3E7DB3"
-                android:text="+"
-                android:textSize="15sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/minus"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="#3E7DB3"
+                    android:text="-"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/minutes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/plus"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="#3E7DB3"
+                    android:text="+"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
 
         </LinearLayout>
 

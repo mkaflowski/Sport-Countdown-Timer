@@ -5,40 +5,28 @@ import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.content.ServiceConnection
+import android.content.res.ColorStateList
 import android.graphics.Color
-import android.media.MediaPlayer
-import android.os.Binder
 import android.os.Bundle
 import android.os.IBinder
-import android.os.Vibrator
 import android.util.Log
-import android.view.MotionEvent
 import android.view.View
-import android.view.ViewConfiguration
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.ScrollView
 import android.widget.TextView
-import androidx.core.view.InputDeviceCompat
-import androidx.core.view.MotionEventCompat
-import androidx.core.view.ViewConfigurationCompat
-import androidx.core.widget.NestedScrollView
 import sanity.wearsportstopwatch.databinding.ActivityMainBinding
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
-import kotlin.math.roundToInt
 
 
 class MainActivity : Activity() {
 
     private lateinit var binding: ActivityMainBinding
-    lateinit var scrollView: ScrollView
-    val time = System.currentTimeMillis()
-    var startTime = System.currentTimeMillis() / 1000
-    val lapTime = 3
+    private lateinit var scrollView: ScrollView
+
     var isRunning = false
     var isRunningCurrent = false
-    var mMediaPlayer = MediaPlayer()
     lateinit var timeTv: TextView
     lateinit var startBt: Button
 
@@ -103,11 +91,10 @@ class MainActivity : Activity() {
 
         // Post a task to scroll to the startBt in the center after the layout is complete
         scrollView.post {
-            val scrollViewHeight = scrollView.height
             val startBtTop = startBt.top
             val startBtHeight = startBt.height
 
-            val scrollTo = startBtTop + startBtHeight / 2 - scrollViewHeight / 2
+            val scrollTo = startBtTop + startBtHeight / 2
             scrollView.smoothScrollTo(0, scrollTo)
         }
 
@@ -118,7 +105,6 @@ class MainActivity : Activity() {
 //                startThread(timeTv, currentTv)
 
 
-
                 val intent = Intent(this, MyService::class.java)
                 intent.putExtra("MINUTES", Integer.parseInt(minutes.text.toString()))
                 applicationContext.startForegroundService(intent)
@@ -127,7 +113,8 @@ class MainActivity : Activity() {
                 startUpdateThread(timeTv)
 
                 startBt.text = "STOP"
-                startBt.setBackgroundColor(Color.parseColor("#ff0000"))
+                startBt.backgroundTintList = ColorStateList.valueOf(Color.parseColor("#ff0000"))
+
                 // Scroll to the top of the ScrollView
                 scrollView.smoothScrollTo(0, 0)
             } else {
@@ -135,7 +122,7 @@ class MainActivity : Activity() {
                 timeTv.text = "STOP"
                 mService.stopThread()
                 startBt.text = "START"
-                startBt.setBackgroundColor(Color.parseColor("#4CAF50"))
+                startBt.backgroundTintList = ColorStateList.valueOf(Color.parseColor("#4CAF50"))
             }
 
 
