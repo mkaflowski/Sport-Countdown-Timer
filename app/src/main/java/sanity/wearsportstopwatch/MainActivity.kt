@@ -45,7 +45,7 @@ class MainActivity : Activity() {
             isRunning = mService.isRunning
             if (isRunning) {
                 startBt.text = "STOP"
-                startBt.setBackgroundColor(Color.parseColor("#ff0000"))
+                startBt.backgroundTintList = ColorStateList.valueOf(Color.parseColor("#ff0000"))
             }
             Log.e("Test", "BIND")
         }
