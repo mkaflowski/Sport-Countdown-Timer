@@ -1,10 +1,11 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:2:1-44:12
-INJECTED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:2:1-44:12
-INJECTED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:2:1-44:12
-INJECTED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:2:1-44:12
+ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:2:1-45:12
+INJECTED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:2:1-45:12
+INJECTED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:2:1-45:12
+INJECTED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:2:1-45:12
 MERGED from [androidx.databinding:viewbinding:7.3.0] /Users/mkaflowski/.gradle/caches/transforms-3/c4cb892f171ca1d410550e46c7385279/transformed/viewbinding-7.3.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.wear:wear-ongoing:1.0.0] /Users/mkaflowski/.gradle/caches/transforms-3/712fd1ce3c2471cf874b664bd2ea5639/transformed/wear-ongoing-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.wear:wear:1.2.0] /Users/mkaflowski/.gradle/caches/transforms-3/4997f2423a7739771fcfc2cd8549bf95/transformed/wear-1.2.0/AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.core:core-ktx:1.7.0] /Users/mkaflowski/.gradle/caches/transforms-3/7068cdee43554453da7a50d00d1579b3/transformed/core-ktx-1.7.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-wearable:18.0.0] /Users/mkaflowski/.gradle/caches/transforms-3/03643536a228219553955dc188900ff9/transformed/play-services-wearable-18.0.0/AndroidManifest.xml:17:1-24:12
@@ -47,20 +48,20 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/mkaflowski
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/mkaflowski/.gradle/caches/transforms-3/cfeebfd8cd9b91764c6616b31ef99b3d/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/mkaflowski/.gradle/caches/transforms-3/15df1e9fa9d0195a92778b2d93ca2e99/transformed/savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/mkaflowski/.gradle/caches/transforms-3/760b9af4b43b4d512130ddd1633ee153/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:2:1-44:12
-INJECTED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:2:1-44:12
-INJECTED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:2:1-45:12
+INJECTED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:2:1-45:12
+INJECTED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:2:1-45:12
 	package
 		INJECTED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml
-		ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:2:1-44:12
+		ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:2:1-45:12
 		INJECTED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml
-		ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:2:1-44:12
+		ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:2:1-45:12
 		INJECTED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml
-		ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:2:1-44:12
+		ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:2:1-45:12
 		INJECTED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:2:11-69
@@ -81,7 +82,7 @@ ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/ma
 	android:name
 		ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:8:19-61
 application
-ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:10:5-42:19
+ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:10:5-43:19
 MERGED from [androidx.wear:wear:1.2.0] /Users/mkaflowski/.gradle/caches/transforms-3/4997f2423a7739771fcfc2cd8549bf95/transformed/wear-1.2.0/AndroidManifest.xml:24:5-28:19
 MERGED from [androidx.wear:wear:1.2.0] /Users/mkaflowski/.gradle/caches/transforms-3/4997f2423a7739771fcfc2cd8549bf95/transformed/wear-1.2.0/AndroidManifest.xml:24:5-28:19
 MERGED from [com.google.android.gms:play-services-wearable:18.0.0] /Users/mkaflowski/.gradle/caches/transforms-3/03643536a228219553955dc188900ff9/transformed/play-services-wearable-18.0.0/AndroidManifest.xml:22:5-20
@@ -133,29 +134,33 @@ ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/ma
 	android:name
 		ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:29:13-66
 activity#sanity.wearsportstopwatch.MainActivity
-ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:32:9-41:20
+ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:32:9-42:20
 	android:label
-		ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:35:13-45
+		ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:36:13-45
+	android:launchMode
+		ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:35:13-48
 	android:exported
 		ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:34:13-36
 	android:name
 		ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:33:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:36:13-40:29
+ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:37:13-41:29
 action#android.intent.action.MAIN
-ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:37:17-69
+ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:38:17-69
 	android:name
-		ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:37:25-66
+		ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:38:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:39:17-77
+ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:40:17-77
 	android:name
-		ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:39:27-74
+		ADDED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml:40:27-74
 uses-sdk
 INJECTED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml
 INJECTED from /Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/AndroidManifest.xml
 MERGED from [androidx.databinding:viewbinding:7.3.0] /Users/mkaflowski/.gradle/caches/transforms-3/c4cb892f171ca1d410550e46c7385279/transformed/viewbinding-7.3.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.databinding:viewbinding:7.3.0] /Users/mkaflowski/.gradle/caches/transforms-3/c4cb892f171ca1d410550e46c7385279/transformed/viewbinding-7.3.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.wear:wear-ongoing:1.0.0] /Users/mkaflowski/.gradle/caches/transforms-3/712fd1ce3c2471cf874b664bd2ea5639/transformed/wear-ongoing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.wear:wear-ongoing:1.0.0] /Users/mkaflowski/.gradle/caches/transforms-3/712fd1ce3c2471cf874b664bd2ea5639/transformed/wear-ongoing-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.wear:wear:1.2.0] /Users/mkaflowski/.gradle/caches/transforms-3/4997f2423a7739771fcfc2cd8549bf95/transformed/wear-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.wear:wear:1.2.0] /Users/mkaflowski/.gradle/caches/transforms-3/4997f2423a7739771fcfc2cd8549bf95/transformed/wear-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core-ktx:1.7.0] /Users/mkaflowski/.gradle/caches/transforms-3/7068cdee43554453da7a50d00d1579b3/transformed/core-ktx-1.7.0/AndroidManifest.xml:5:5-7:41

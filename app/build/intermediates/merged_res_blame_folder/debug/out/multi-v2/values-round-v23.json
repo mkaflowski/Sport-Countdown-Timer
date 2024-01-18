@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "sanity.wearsportstopwatch.app-mergeDebugResources-18:/values-round-v23/values-round-v23.xml",
+            "outputFile": "sanity.wearsportstopwatch.app-mergeDebugResources-19:/values-round-v23/values-round-v23.xml",
             "map": [
                 {
                     "source": "/Users/mkaflowski/AndroidStudioProjects/WearSportStopwatch/app/src/main/res/values-round/strings.xml",

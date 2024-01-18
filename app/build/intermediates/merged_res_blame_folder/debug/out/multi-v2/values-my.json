@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "sanity.wearsportstopwatch.app-mergeDebugResources-18:/values-my/values-my.xml",
+            "outputFile": "sanity.wearsportstopwatch.app-mergeDebugResources-19:/values-my/values-my.xml",
             "map": [
                 {
                     "source": "/Users/mkaflowski/.gradle/caches/transforms-3/4997f2423a7739771fcfc2cd8549bf95/transformed/wear-1.2.0/res/values-my/values-my.xml",
