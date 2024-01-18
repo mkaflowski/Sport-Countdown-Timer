@@ -12,20 +12,27 @@ import android.os.Bundle
 import android.os.IBinder
 import android.os.Vibrator
 import android.util.Log
+import android.view.MotionEvent
 import android.view.View
+import android.view.ViewConfiguration
 import android.view.WindowManager
 import android.widget.Button
+import android.widget.ScrollView
 import android.widget.TextView
+import androidx.core.view.InputDeviceCompat
+import androidx.core.view.MotionEventCompat
+import androidx.core.view.ViewConfigurationCompat
 import androidx.core.widget.NestedScrollView
 import sanity.wearsportstopwatch.databinding.ActivityMainBinding
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
+import kotlin.math.roundToInt
 
 
 class MainActivity : Activity() {
 
     private lateinit var binding: ActivityMainBinding
-    lateinit var scrollView: NestedScrollView
+    lateinit var scrollView: ScrollView
     val time = System.currentTimeMillis()
     var startTime = System.currentTimeMillis() / 1000
     val lapTime = 3
@@ -64,6 +71,7 @@ class MainActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         isRunningCurrent = true
@@ -88,6 +96,8 @@ class MainActivity : Activity() {
             minutes.text = (Integer.parseInt(minutes.text.toString()) - 1).toString()
         })
 
+        // Need for rotary scrolling work
+        scrollView.requestFocus()
 
         timeTv.text = "STOP"
 

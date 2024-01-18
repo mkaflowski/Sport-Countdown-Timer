@@ -5,10 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.core.widget.NestedScrollView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import androidx.wear.widget.BoxInsetLayout;
@@ -37,14 +37,14 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Button plus;
 
   @NonNull
-  public final NestedScrollView scrollView;
+  public final ScrollView scrollView;
 
   @NonNull
   public final TextView time;
 
   private ActivityMainBinding(@NonNull BoxInsetLayout rootView, @NonNull Button buttonStart,
       @NonNull TextView currentTimeTextView, @NonNull Button minus, @NonNull TextView minutes,
-      @NonNull Button plus, @NonNull NestedScrollView scrollView, @NonNull TextView time) {
+      @NonNull Button plus, @NonNull ScrollView scrollView, @NonNull TextView time) {
     this.rootView = rootView;
     this.buttonStart = buttonStart;
     this.currentTimeTextView = currentTimeTextView;
@@ -113,7 +113,7 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       id = R.id.scrollView;
-      NestedScrollView scrollView = ViewBindings.findChildViewById(rootView, id);
+      ScrollView scrollView = ViewBindings.findChildViewById(rootView, id);
       if (scrollView == null) {
         break missingId;
       }
