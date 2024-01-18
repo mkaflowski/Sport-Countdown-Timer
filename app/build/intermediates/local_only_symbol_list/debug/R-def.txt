@@ -5,6 +5,7 @@ dimen box_inset_layout_padding
 dimen inner_frame_layout_padding
 drawable notification
 id buttonStart
+id constraintlayout_main
 id currentTimeTextView
 id label1
 id minus

@@ -9,6 +9,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import androidx.wear.widget.BoxInsetLayout;
@@ -23,6 +24,9 @@ public final class ActivityMainBinding implements ViewBinding {
 
   @NonNull
   public final Button buttonStart;
+
+  @NonNull
+  public final ConstraintLayout constraintlayoutMain;
 
   @NonNull
   public final TextView currentTimeTextView;
@@ -46,11 +50,12 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView time;
 
   private ActivityMainBinding(@NonNull BoxInsetLayout rootView, @NonNull Button buttonStart,
-      @NonNull TextView currentTimeTextView, @NonNull TextView label1, @NonNull Button minus,
-      @NonNull TextView minutes, @NonNull Button plus, @NonNull ScrollView scrollView,
-      @NonNull TextView time) {
+      @NonNull ConstraintLayout constraintlayoutMain, @NonNull TextView currentTimeTextView,
+      @NonNull TextView label1, @NonNull Button minus, @NonNull TextView minutes,
+      @NonNull Button plus, @NonNull ScrollView scrollView, @NonNull TextView time) {
     this.rootView = rootView;
     this.buttonStart = buttonStart;
+    this.constraintlayoutMain = constraintlayoutMain;
     this.currentTimeTextView = currentTimeTextView;
     this.label1 = label1;
     this.minus = minus;
@@ -90,6 +95,12 @@ public final class ActivityMainBinding implements ViewBinding {
       id = R.id.buttonStart;
       Button buttonStart = ViewBindings.findChildViewById(rootView, id);
       if (buttonStart == null) {
+        break missingId;
+      }
+
+      id = R.id.constraintlayout_main;
+      ConstraintLayout constraintlayoutMain = ViewBindings.findChildViewById(rootView, id);
+      if (constraintlayoutMain == null) {
         break missingId;
       }
 
@@ -135,8 +146,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((BoxInsetLayout) rootView, buttonStart, currentTimeTextView,
-          label1, minus, minutes, plus, scrollView, time);
+      return new ActivityMainBinding((BoxInsetLayout) rootView, buttonStart, constraintlayoutMain,
+          currentTimeTextView, label1, minus, minutes, plus, scrollView, time);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -9,12 +9,14 @@ import android.content.res.ColorStateList
 import android.graphics.Color
 import android.os.Bundle
 import android.os.IBinder
+import android.util.DisplayMetrics
 import android.util.Log
 import android.view.View
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.ScrollView
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import sanity.wearsportstopwatch.databinding.ActivityMainBinding
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
@@ -46,7 +48,6 @@ class MainActivity : Activity() {
                 startBt.setBackgroundColor(Color.parseColor("#ff0000"))
             }
             Log.e("Test", "BIND")
-            startUpdateThread(timeTv)
         }
 
         override fun onServiceDisconnected(arg0: ComponentName) {
@@ -72,6 +73,12 @@ class MainActivity : Activity() {
         val currentTv = findViewById<TextView>(R.id.currentTimeTextView)
         startBt = findViewById(R.id.buttonStart)
 
+
+        centerTimerView()
+
+        // If you want to set width, use screenWidth instead
+        // viewX.layoutParams = LinearLayout
+
         val minutes = findViewById<TextView>(R.id.minutes)
 
         val plus = findViewById<Button>(R.id.plus)
@@ -81,7 +88,10 @@ class MainActivity : Activity() {
 
         val minus = findViewById<Button>(R.id.minus)
         minus.setOnClickListener(View.OnClickListener {
-            minutes.text = (Integer.parseInt(minutes.text.toString()) - 1).toString()
+            var res = Integer.parseInt(minutes.text.toString()) - 1
+            if (res == 0)
+                res = 1
+            minutes.text = res.toString()
         })
 
         // Need for rotary scrolling work
@@ -110,8 +120,6 @@ class MainActivity : Activity() {
                 applicationContext.startForegroundService(intent)
                 isRunning = true
 
-                startUpdateThread(timeTv)
-
                 startBt.text = "STOP"
                 startBt.backgroundTintList = ColorStateList.valueOf(Color.parseColor("#ff0000"))
 
@@ -136,23 +144,32 @@ class MainActivity : Activity() {
                     val formatter = DateTimeFormatter.ofPattern("HH:mm:ss")
                     val formatted = current.format(formatter)
                     currentTv.text = formatted
+
+                    if (isRunning) {
+                        timeTv.post {
+                            val formatted = mService.getFormattedTime()
+                            timeTv.text = formatted
+                        }
+                    }
                 }
-                Thread.sleep(250)
+                Thread.sleep(1000)
             }
         }.start()
     }
 
-    private fun startUpdateThread(timeTv: TextView) {
-        Thread {
-            while (isRunning) {
-                timeTv.post {
-                    val formatted = mService.getFormattedTime()
-                    timeTv.text = formatted
-                }
-                Thread.sleep(250)
-            }
-        }.start()
+    private fun centerTimerView() {
+        val constraintMain = binding.constraintlayoutMain
+        // Get display metrics
+        val displayMetrics = DisplayMetrics()
+        windowManager.defaultDisplay.getMetrics(displayMetrics)
+        // Get screen width and height
+        val screenHeight = displayMetrics.heightPixels
+        // Set view dimensions (for example, set height to screen height)
+        val lp = constraintMain.getLayoutParams()
+        lp.height = screenHeight
+        constraintMain.layoutParams = lp
     }
+
 
     override fun onStart() {
         super.onStart()
