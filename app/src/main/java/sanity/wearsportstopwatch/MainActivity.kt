@@ -100,13 +100,14 @@ class MainActivity : Activity() {
         timeTv.text = "STOP"
 
         // Post a task to scroll to the startBt in the center after the layout is complete
-        scrollView.post {
-            val startBtTop = startBt.top
-            val startBtHeight = startBt.height
-
-            val scrollTo = startBtTop + startBtHeight / 2
-            scrollView.smoothScrollTo(0, scrollTo)
-        }
+        scrollView.postDelayed(object : Runnable {
+            override fun run() {
+                val startBtTop = startBt.top
+                val startBtHeight = startBt.height
+                val scrollTo = startBtTop - 10
+                scrollView.smoothScrollTo(0, scrollTo)
+            }
+        }, 50)
 
         startBt.setOnClickListener(View.OnClickListener {
             if (!isRunning) {
